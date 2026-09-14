@@ -40,6 +40,132 @@ footer{background:#062b47;color:#bcd0dd;padding:30px 0 100px;text-align:center;f
 .mobile{display:none;position:fixed;bottom:12px;left:12px;right:12px;background:#ffffffef;padding:7px;border:1px solid var(--line);border-radius:17px;z-index:20;gap:7px;box-shadow:0 10px 35px #123b552b}.mobile a{flex:1;text-align:center;color:white;padding:10px;border-radius:12px;font-weight:900}.mobile .c{background:var(--blue)}.mobile .w{background:#12aa73}
 @media(max-width:850px){.links,.phonebtn{display:none}.hero{padding-top:16px}.hero-grid{grid-template-columns:1fr}.poster-shell{order:1}.hero-copy{order:2}.hero-copy h1{font-size:32px}.services{grid-template-columns:1fr 1fr}.whygrid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.cta{display:block;text-align:center}.cta .actions{justify-content:center}.mobile{display:flex}}
 @media(max-width:480px){.services{grid-template-columns:1fr}.trust{grid-template-columns:1fr}.whygrid{grid-template-columns:1fr}.poster-shell{border-radius:17px;padding:6px}.poster-shell img{border-radius:12px}}
+/* Milky Glass Buttons */
+.btn,
+.phonebtn {
+    background: rgba(255, 255, 255, 0.68) !important;
+    color: #064a78 !important;
+    border: 1px solid rgba(255, 255, 255, 0.85) !important;
+    border-radius: 16px !important;
+    padding: 12px 22px !important;
+    font-weight: 700 !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(6, 74, 120, 0.12);
+    transition: all 0.25s ease;
+}
+
+.btn:hover,
+.phonebtn:hover {
+    background: rgba(255, 255, 255, 0.88) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(6, 74, 120, 0.18);
+}
+  /* Persian Typography & Alignment */
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    line-height: 1.9;
+}
+
+h1, h2, h3, b {
+    font-family: Tahoma, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+h1 {
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+}
+
+p {
+    line-height: 2;
+    text-align: right;
+    margin-top: 8px;
+}
+
+.head {
+    text-align: center;
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head p {
+    text-align: center;
+}
+
+.card,
+.whyitem,
+.step {
+    text-align: right;
+    height: 100%;
+}
+
+.card p,
+.whyitem p,
+.step p {
+    margin-bottom: 0;
+}
+
+.actions {
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+    h1, h2 {
+        text-align: center;
+    }
+
+    .hero-copy {
+        text-align: center;
+    }
+
+    .hero-copy p {
+        text-align: center;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+}
+  /* Soft Milky Glass Cards */
+.card,
+.whyitem,
+.step {
+    background: rgba(255, 255, 255, 0.76) !important;
+    border: 1px solid rgba(255, 255, 255, 0.9) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(6, 74, 120, 0.08) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 22px !important;
+}
+
+.card h3,
+.whyitem b,
+.step b {
+    color: #075082;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card,
+.whyitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 </style>
   <script type="application/ld+json">
 {
